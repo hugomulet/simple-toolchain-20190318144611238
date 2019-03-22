@@ -8,7 +8,7 @@ module.exports = (function (settings) {
 
   var defaultTestSettings = settings.test_settings.default;
   defaultTestSettings.selenium_port = 80;
-  defaultTestSettings.selenium_host = 'ondemand.saucelabs.com';
+  defaultTestSettings.selenium_host = 'ondemand.eu-central-1.saucelabs.com';
   delete defaultTestSettings.default_path_prefix;
 
   defaultTestSettings.username = process.env.SAUCE_USERNAME;
