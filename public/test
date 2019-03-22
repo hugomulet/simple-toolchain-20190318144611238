@@ -5,7 +5,7 @@ module.exports = {
         .url(AdressUrl)
         .getText("body > table:nth-child(4) > tbody > tr:nth-child(1) > th", function(result) {
           this.assert.equal(typeof result, "object");
-          this.assert.equal(result.status, 0);
+          this.assert.equal(result.status, 10);
           this.assert.equal(result.value, "Username");
         })
         .pause(999)
