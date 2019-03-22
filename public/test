@@ -1,3 +1,9 @@
+if (typeof global !== "undefined") {
+    Structured = global.structured;
+} else {
+    Structured = this.Structured;
+}
+
 module.exports = {
     'Google Search' : function (browser) {
       var AdressUrl = 'https://simple-toolchain-20190318144611238.eu-gb.mybluemix.net/'
