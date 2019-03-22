@@ -1,4 +1,4 @@
 applications:
 - name: node-hello-world
-  memory: 12M
+  memory: 128M
   buildpack: sdk-for-nodejs
