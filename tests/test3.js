@@ -1,8 +1,9 @@
 module.exports = {
     'Google Search' : function (browser) {
-        var AdressUrl = process.env.APP_URL;  
+        var AddressUrl = process.env.APP_URL;
+        console.log("AdressUrl:", AddressUrl);
       browser
-        .url(AdressUrl)
+        .url(AddressUrl)
         .getText("body > table:nth-child(4) > tbody > tr:nth-child(1) > th", function(result) {
           this.assert.equal(typeof result, "object");
           this.assert.equal(result.status, 0);
@@ -21,7 +22,7 @@ module.exports = {
           this.assert.equal(result.value, true);
         })
         .pause(999)
-        .assert.urlContains(AdressUrl)
+        .assert.urlContains(AddressUrl)
         .end();
     }
   };
