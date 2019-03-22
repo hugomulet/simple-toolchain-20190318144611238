@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="test3"
+    errors="1" failures="0" hostname="" id="" package="test3" skipped="1"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+
+  
+    
+    <testcase
+      name="Google Search" classname="test3">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

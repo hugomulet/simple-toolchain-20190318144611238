@@ -1,6 +1,6 @@
 module.exports = {
     'Google Search' : function (browser) {
-      var AdressUrl = 'https://simple-toolchain-20190318144611238.eu-gb.mybluemix.net/'
+        var AdressUrl = process.env.APP_URL;  
       browser
         .url(AdressUrl)
         .getText("body > table:nth-child(4) > tbody > tr:nth-child(1) > th", function(result) {
@@ -21,7 +21,7 @@ module.exports = {
           this.assert.equal(result.value, true);
         })
         .pause(999)
-        .assert.urlContains('20190318144611238')
+        .assert.urlContains(AdressUrl)
         .end();
     }
   };
